@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- All CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>RENUKA BEAUTY PARLOUR</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  </head>
+
+  <body class="home-two">
+    <!--    -------- Appointment Section Start ------------- -->
+
+    <section class="appointment v2">
+      <div class="appointment-wrap">
+        <div class="appointment-form">
+          <form action="#" method="POST">
+            <div class="form-field half-width">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                onkeyup=" numberonly1(this)"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+            </div>
+            <div class="form-field half-width">
+              <div class="select-field">
+                <div class="appointment-container">
+                  <select name="service">
+                    <option>Select a service</option>
+                    <option>Facial Therapy</option>
+                    <option>Hair Style</option>
+                    <option>Body Therapy</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-field half-width">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone number"
+                  onkeyup=" numberonly(this)"
+                />
+                <input type="text" name="address" placeholder=" address" />
+              </div>
+            </div>
+            <div class="form-field half-width">
+              <input type="date" name="date" placeholder="Date" required />
+              <input type="time" name="time" placeholder="Time" required />
+            </div>
+            <div class="form-field">
+              <textarea name="notes" placeholder="Your notes"></textarea>
+            </div>
+            <button type="submit" class="btn btn-round" name="submit">
+              Make an Appointment
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--    -------- Appointment Section End ------------- -->
+
+    <!--    -------- Footer Section Start ------------- -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <a href="index.html" class="logo foo-logo">
+              <img src="images/logo.png" alt="" />
+            </a>
+            <nav class="foo-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="foo-social">
+              <a href=""><i class="ti-email"></i></a>
+              <a href=""
+                ><i class="ti-location-pin"></i
+              ></a>
+              <a
+                href=""
+                ><i class="ti-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      function numberonly(input) {
+        var num = /[^0-9]/gi;
+        input.value = input.value.replace(num, "");
+      }
+
+      function numberonly1(input) {
+        var char = /[^a-z]/gi;
+        input.value = input.value.replace(char, "");
+      }
+    </script>
+    <!--    -------- Footer Section End ------------- -->
+  </body>
+</html>
